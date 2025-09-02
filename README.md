@@ -1,5 +1,1 @@
-# quiz-para-programadores
-# quiz-para-programadores
-# quiz-para-programadores
-# quiz-para-programadores
-# quiz-para-programadores
+# quiz-programacao
