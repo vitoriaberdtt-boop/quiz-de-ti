@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quiz para programadores</title>
+        <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            input[type="text"], input[type="file"], input[type="email"], input[type="comments"], option{
+                width: 100%;
+                height: 30px;
+                border: 2px solid blueviolet;
+                padding: 5px;
+                border-radius: 5px;
+                background-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <fieldset>
+                <h1>Quiz interativo para programadores</h1>
+                <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>
+            </fieldset>
+        </header>
+        <main>
+            <!--INTRODUÇÃO-->
+            <section>
+                <h2>&gt Sobre esse quiz</h2>
+                <p>Esse quiz foi desenvolvido para testar seus conhecimentos em programação.
+                Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. <br>
+                As perguntas serão para <em>nível iniciante</em>, contendo conceitos básicos de programação e linguagens simples. <br>
+                Você poderá encontrar alguns acrônimos como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que são muito usadas em questões relacionadas ao deselvolvimento web. <strong>Desafie-se com este quiz!</strong></p>
+            </section>
+            <!--Pergunta 1: Multipla escolha-->
+            <section>
+                <h2>&gt Pergunta 1: Qual das linguagens abaixo é usada para estruturar páginas web?</h2>
+                <fieldset>
+                <form>
+                    <input type="radio" value="python" id="p1a" name="Pergunta1">
+                    <label for="p1a">python</label> <br>
+                    <input type="radio" value="HTML" id="p1b" name="Pergunta1">
+                    <label for="p1b">HTML</label> <br>
+                    <input type="radio" value="JavaScript" id="p1c" name="Pergunta1">
+                    <label for="p1c">JavaScript</label> <br>
+                    <input type="radio" value="Ruby" id="p1d" name="Pergunta1">
+                    <label for="p1d">Ruby</label>
+                </form>
+                </fieldset>
+            </section>
+            <!--Pergunta 2: texto-->
+            <section>
+                <h2>&gt Pergunta 2: Na URL https://www.google.com o trecho escrito "google.com" é o... </h2>
+                <form>
+                    <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta">
+                </form>
+            </section>
+            <!--Pergunta 3: senha-->
+            <section>
+                <h2>&gt Pergunta 3: Escreva abaixo um exemplo de senha forte </h2>
+                <input 
+                    type="text" id="p3" name="pergunta3" placeholder="Digite uma senha">
+            </section>
+            <!--Pergunta 4: data-->
+            <section>
+                <h2>&gt Pergunta 4: Em que ano HTML lançou sua primeira versão? </h2>
+                <form>
+                     <input 
+                        type="text" id="p4" name="pergunta4" placeholder="dd/mm/aaaa">
+                </form>
+            </section>
+            <!--Pergunta 5: seleção multipla-->
+            <section>
+                <h2>&gt Pergunta 5: Qual dessas tecnologias são consideradas linguagens de programação? </h2>
+                <fieldset>
+                <form>
+                    <input type="checkbox" id="p5a" name="pergunta5" value="JavaScript">
+                    <label for="p5a">JavaScript</label> <br>
+                    <input type="checkbox" id="p5b" name="pergunta5" value="HTML">
+                    <label for="p5b">HTML</label> <br>
+                    <input type="checkbox" id="p5c" name="pergunta5" value="Java">
+                    <label for="p5c">Java</label> <br>
+                    <input type="checkbox" id="p5d" name="pergunta5" value="CSS">
+                    <label for="p5d">CSS</label>
+                </form>
+                </fieldset>
+            </section>
+            <!--Pergunta 6: arquivo-->
+            <section>
+                <h2>&gt Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+                <form>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+            </section>
+            <!--Pergunta 7: menu suspenso-->
+            <section>
+                <h2>&gt Pergunta 7: Selecione o atributo do input que define o seu tipo:</h2>
+                <form>
+                    <select name="pergunta7" id="p7">
+                        <option value="id">id</option>
+                        <option value="type">type</option>
+                        <option value="placeholder">placeholder</option>
+                        <option value="name">name</option>
+                    </select>
+                </form>
+            </section>
+            <!--Pergunta 8: imagem-->
+            <section>
+                <h2>&gt Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
+                <figure>
+                    <img src="./assets/logo.png">
+                    <img src="./assets/9logo.webp">
+                    <img src="./assets/8logo.png">  
+                </figure>
+                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta">
+            </section>
+            <!--Pergunta 9: multipla escolha-->
+            <section>
+                <h2>&gt Pergunta 9: Em CSS, qual propriedade é usada para mudar a cor do texto de um elemento?</h2>
+                <fieldset>
+                <form>
+                    <input type="radio" value="background-color" id="p9a" name="Pergunta9">
+                    <label for="p9a">background-color</label> <br>
+                    <input type="radio" value="text-style" id="p9b" name="Pergunta9">
+                    <label for="p9b">text-style</label> <br>
+                    <input type="radio" value="font-color" id="p9c" name="Pergunta9">
+                    <label for="p9c">font-color</label> <br>
+                    <input type="radio" value="color" id="p9d" name="Pergunta9">
+                    <label for="p9d">color</label>
+                </form>
+                </fieldset>
+            </section>
+            <!--Pergunta 10: multipla escolha-->
+            <section>
+                <h2>&gt Pergunta 10: O que a sigla HTML representa?</h2>
+                <fieldset>
+                <form>
+                    <input type="radio" value="HyperText Markup Language" id="p10a" name="Pergunta10">
+                    <label for="p10a">HyperText Markup Language</label> <br>
+                    <input type="radio" value="Hyperlink and Text Markup Language" id="p10b" name="Pergunta10">
+                    <label for="p10b">Hyperlink and Text Markup Language</label> <br>
+                    <input type="radio" value="Home Tool Markup Language" id="p10c" name="Pergunta10">
+                    <label for="p10c">Home Tool Markup Language</label> <br>
+                    <input type="radio" value="High-Level Text Management" id="p10d" name="Pergunta10">
+                    <label for="p10d">High-Level Text Management</label>
+                </form>
+                </fieldset>
+            </section>
+            <!--Lista de respostas-->
+            <section>
+                <h2>&gt Verifique suas respostas</h2>
+                <fieldset>
+                    <details>
+                        <summary>clique para ver as respostas do quiz</summary>
+                        <ol>
+                            <li>HTML</li>
+                            <li>Domínio</li>
+                            <li>Se sua senha possui ao menos 8 caracteres, misturando letras, números e símbolos, ela está correta.</li>
+                            <li>1991</li>
+                            <li>JavaScript e Java</li>
+                            <li>Se seu arquivo possui extensão .html ele está correto.</li>
+                            <li>type</li>
+                            <li>JavaScript</li>
+                            <li>Color</li>
+                            <li>HyperText Markup Language</li>
+                        </ol>
+                    </details>
+                </fieldset>
+            </section>
+            <!--Tabela de pontuação-->
+            <section>
+                <h2>&gt Tabela de pontuação</h2>
+                    <table 
+                    style: border="1">
+                        <thead>
+                            <tr>
+                                <th>Pontuação</th>
+                                <th>Avaliação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 0-2 </td> <td>Pontuação ruim, mas não desista</td>
+                            </tr>
+                            <tr>
+                                <td> 3-5 </td> <td>Satisfatório, porém ainda pode melhorar</td>
+                            </tr>
+                            <tr>
+                                <td> 6-8 </td> <td>Ótimo, você está indo bem</td>
+                            </tr>
+                            <tr>
+                                <td> 9-10 </td> <td>Perfeito! Você conhece muito sobre programação.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+            <!--Formulário de feedback-->
+            <section>
+                <h2>&gt Nos dê o seu feedback</h2>
+                <fieldset>
+                    <form>
+                        <label for="name">Nome</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email</label> <br>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="comentarios">Comentários</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <button onclick="alert('Feedback enviado')">Enviar</button>
+                    </form>
+                </fieldset>
+            </section>
+        </main>
+        <footer>
+            <p>&copy Quiz de programadores. Todos os direitos reservados</p>
+            <p>Para conhecer outros quizzes <a href="https://google.com" target="_blank">clique aqui</a></p>
+            <p>Para conhecer a developer
+                <a href="https://www.instagram.com/vitoria_4ever/" target="_blank"><3</a>
+            </p>
+        </footer>
+    </body>
+</html>
